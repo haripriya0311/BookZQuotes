@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZQuotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logo">
+        <img width="165px" src="logo.svg" alt="website logo">
+    
+    </div>
+
+    <h2>BOOK'S BEST QUOTES</h1>
+
+        <div class="container">
+            <div class="book-container">
+                <h2>Rich Dad Poor Dad</h2>
+                <h5>Robert</h5> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa beatae neque doloremque animi esse architecto, repellat rerum l aborum eveniet saepe quia ad fugiat qui ex assumenda corporis quasi. Nam.</p>
+                <button onclick="deletebook(event)">Delete</button>
+            </div>
+        </div>
+
+            <div class="container">
+                <div class="book-container">
+                    <h2>You Became What You Think</h2>
+                    <h5>Shubham Kumar Singh</h5> 
+                    <p>The truth is, change is the only constant inlife and holding on tightly to what we know only leads to more suffering.So,the key is to embrace change, not resist it!</p>
+                    <button onclick="deletebook(event)">Delete</button>
+                 </div>
+                
+            </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>ADD BOOK</h2>
+        <form >
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form> 
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+     
+    <script src="script.js"></script>
+
+</body>
+</html> 
